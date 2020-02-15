@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>PİGMENT</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.min.css" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- Main navigation -->
+<header>
+  <!--Navbar-->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><strong>PİGMENT</strong></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-7"
+        aria-controls="navbarSupportedContent-7" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent-7">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Anasayfa<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="giris.html">Yorum Yap</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="profil.html">Profile</a>
+          </li>
+        </ul>
+        
+      </div>
+    </div>
+  </nav>
+
+
+<div class="container" id="urun">
+    <div class="shadow-none p-2 mb-1 bg-light rounded" style="text-align: center;"><B>ÜRÜN SEÇ</B></div>
+<div class="shadow-none p-2 mb-1 bg-white rounded">Maskara  </div>
+<div class="shadow-sm p-2 mb-1 bg-white rounded" style="border: 3px;">Far</div>
+<div class="shadow p-2 mb-1 bg-white rounded">Pudra</div>
+<div class="shadow-lg p-2 mb-1 bg-white rounded">Ruj</div>
+<div class="shadow-lg p-2 mb-1 bg-white rounded">Allık</div>
+
+</div>
+
+<div class="container " id="dal">
+    <h2>Ürün veya Özellik Ara</h2>
+    <p>İstediğiniz bir sorun veya ürünle ilgili arama yapabilirsiniz</p>  
+    <input class="form-control" id="myInput" type="text" placeholder="Search..">
+    <br>
+    <ul class="list-group" id="myList">
+      <li class="list-group-item">Çatlak</li>
+      <li class="list-group-item">yanık</li>
+      <li class="list-group-item">allık</li>
+      <li class="list-group-item">koyu renkli farlar</li>
+    </ul>  
+  </div>
+  
+<div class="oneri">
+<h5 style="text-align: center;"> <u>Ürün için ne yapılabilir ?</u></h5>
+</div>
+
+
+  
+
+  <script>
+  $(document).ready(function(){
+    $("#myInput").on("keyup", function() {
+      var value = $(this).val().toLowerCase();
+      $("#myList li").filter(function() {
+        $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+      });
+    });
+  });
+  </script>

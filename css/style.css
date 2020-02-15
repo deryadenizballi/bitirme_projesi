@@ -1,0 +1,84 @@
+/* Required for full background image */
+
+html,
+body,
+header,
+.view {
+height: 100%;
+}
+body{ background-color: #e6ffff  ;}
+@media (max-width: 740px) {
+html,
+body,
+header,
+.view {
+height: 100vh;
+}
+}
+
+.top-nav-collapse {
+background-color: #78909c !important;
+}
+
+.navbar:not(.top-nav-collapse) {
+background: transparent !important;
+}
+
+@media (max-width: 991px) {
+.navbar:not(.top-nav-collapse) {
+background: #78909c !important;
+}
+}
+
+h1 {
+letter-spacing: 8px;
+}
+
+h5 {
+letter-spacing: 3px;
+}
+
+.hr-light {
+border-top: 3px solid #fff;
+width: 80px;
+}
+
+.boyut{ 
+
+  text-align: center;
+}
+#ort{
+
+    background-color: #c8d6e5;
+}
+
+#urun{
+ margin-top:300px;
+color: #000;
+background: bisque;
+width: 280px;
+margin-left: 20px;
+padding-top:30px;
+padding-bottom: 30px;
+border-radius: 5px;
+border-color: brown;
+}
+
+#dal{
+
+width: 500px;
+color: black;
+margin-bottom: 500px;
+
+}
+
+.oneri{
+  width: 600px;
+  height: 200px;
+  background-color:pink ;
+  border-radius: 5px;
+  border:2px grey dashed;
+  margin-left:300px;
+  padding-top: 20px;
+  margin-bottom: 300px;
+}
